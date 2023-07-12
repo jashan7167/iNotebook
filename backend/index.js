@@ -4,7 +4,7 @@ const app = express()
 const port = 3000
 connecttoMongo();  //js works on non blocking nature hence asynchronous nature execute hta rhega call back fire hta rhega
 
-app.use(express.json())
+app.use(express.json()) //necessary middle ware to use req.body in the paragraph
 app.use('/api/auth',require('./routes/auth'))
 app.use('/api/notes',require('./routes/note'))
 
